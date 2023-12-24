@@ -14,40 +14,19 @@ body {
 
 .logo {
     font-size: 26px;
-    margin: 0;
-    padding-top: 0px;
 }
 
 .logo > span {
     color: #2196F3;
 }
 
-nav {
-    display: inline;
-}
-
-ul {
-    margin-left: 15%;
-    margin-bottom: 0;
-}
-
-li {
-    display: inline;
-}
-
 a {
     text-decoration: none;
     color: black;
-    margin: 50px;
     font-weight: 500;
 }
 
-.links {
-    text-align: right;
-}
-
 .link {
-    margin-bottom: 10%;
     color: var(--smoky-color);
 }
 
@@ -59,15 +38,13 @@ h1 {
 }
 
 .first {
-    padding-top: 250px;
-    padding-bottom: 250px;
+    padding: 250px;
     background-color: #2F303A;
     text-align: center;
 }
 
-.first > button {
+.first > .container > button {
     margin-top: 20px;
-    width: 200px;
     padding: 10px;
     background-color: #2196F3;
     color: white;
@@ -78,23 +55,19 @@ h1 {
     letter-spacing: 0.96px;
 }
 
-.first > button:hover {
+.first > .container > button:hover {
     cursor: pointer;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
-.first > button:active {
+.first > .container > button:active {
     cursor: default;
-}
-
-.company {
-    margin-left: 215px;
 }
 
 .info {
     display: inline-block;
+    margin: 3px;
     margin-top: 100px;
-    margin-left: 20px;
 }
 
 .info > h4 {
@@ -114,7 +87,7 @@ h1 {
     text-align: center;
 }
 
-.work > h2 {
+.work > .container > h2 {
     font-size: 36px;
     font-weight: 700;
     margin-top: 100px;
@@ -122,10 +95,10 @@ h1 {
 }
 
 .imgwork {
-    margin: 10px;
+    margin: 7px;
 }
 
-.command > h2 {
+.command > .container > h2 {
     font-size: 36px;
     font-weight: 700;
     margin-top: 94px;
@@ -135,18 +108,15 @@ h1 {
 .command {
     text-align: center;
     background-color: #F5F4FA;
-    width: 1663px;
-    height: 648px;
 }
 
 .card {
-    margin-top: 50px;
     background: #FFF;
     display: inline-block;
-    width: 270px;
-    height: 368px;
     border-radius: 0px 0px 4px 4px;
-    margin: 10px;
+    margin: 9px;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
 }
 
 .card > h5 {
@@ -192,4 +162,10 @@ address {
     font-weight: 400;
     display: block;
     margin: 20px;
+}
+
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
